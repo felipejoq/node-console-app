@@ -1,5 +1,4 @@
 import fs from 'node:fs';
-import { operations } from '../const/operations.js';
 import { Record } from '../models/record.model.js';
 import { PATH_DATA } from '../const/globals.js';
 

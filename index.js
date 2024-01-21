@@ -4,4 +4,7 @@ import { RecordService } from "./services/records.service.js";
 const args = process.argv.slice(2);
 const [operation, ...inputs] = args;
 
-new RecordController(new RecordService()).showResult({operation, inputs});
+const recordService = new RecordService();
+const recordController = new RecordController(recordService)
+
+recordController.showResult({ operation, inputs });
