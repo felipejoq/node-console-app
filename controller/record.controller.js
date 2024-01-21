@@ -2,11 +2,11 @@ import { operations } from "../const/operations.js";
 
 export class RecordController {
 
-  constructor(recordService){
+  constructor(recordService) {
     this.recordService = recordService;
   }
 
-  showResult({operation, inputs = []}) {
+  showResult({ operation, inputs = [] }) {
     switch (operation) {
       case operations.read:
         console.log('*** Record List ***');
