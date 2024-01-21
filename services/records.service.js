@@ -21,21 +21,22 @@ export class RecordService {
         break;
 
       default:
-        console.log(`ℹ️\tInvalid operation. Try with this operations: ${[...Object.values(operations)].join(', ')}.`);
+        console.log(`ℹ️\tOperation is required. Try with this operations: ${[...Object.values(operations)].join(', ')}.`);
         break;
     }
   }
 
   getRecords() {
     if (this.checkFileExist()) {
-      const records = JSON.parse(fs.readFileSync(PATH_DATA));
+      const records = JSON.parse(fs.readFileSync(PATH_DATA, { encoding: 'utf-8' }));
       return records;
     }
   }
 
   createRecord(inputs = []) {
-    if (inputs.length < 5)
-      return `ℹ️\tAll values required: ${Object.getOwnPropertyNames(new Record).join(', ')}.`;
+    if (inputs.length < 5) {
+      return `ℹ️\tAll values required: ${Object.getOwnPropertyNames(new Record).slice(1).join(', ')}.`;
+    }
 
     this.records = [
       ...this.records,
