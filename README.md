@@ -21,7 +21,7 @@ node index.js registrar name age type color disease
 - Ejemplo real:
 
 ```bash
-node index.js registrar toby "1 año" perro gris tos
+node index.js registrar toby "1 año" gato gris tos
 ```
 
 > [!IMPORTANT]
