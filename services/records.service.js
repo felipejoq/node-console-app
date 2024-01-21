@@ -9,23 +9,6 @@ export class RecordService {
     this.records = this.getRecords();
   }
 
-  showResult(operation, inputs = []) {
-    switch (operation) {
-      case operations.read:
-        console.log('*** Record List ***');
-        console.table(this.records)
-        break;
-
-      case operations.register:
-        console.table(this.createRecord(inputs))
-        break;
-
-      default:
-        console.log(`ℹ️\tOperation is required. Try with this operations: ${[...Object.values(operations)].join(', ')}.`);
-        break;
-    }
-  }
-
   getRecords() {
     if (this.checkFileExist()) {
       const records = JSON.parse(fs.readFileSync(PATH_DATA, { encoding: 'utf-8' }));
