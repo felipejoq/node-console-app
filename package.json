@@ -1,0 +1,12 @@
+{
+  "name": "node-console",
+  "version": "1.0.0",
+  "description": "A simple node app console",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe JQ",
+  "license": "ISC"
+}

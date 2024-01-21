@@ -1,0 +1,1 @@
+export const PATH_DATA = './data/records.json';
