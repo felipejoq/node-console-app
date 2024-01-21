@@ -1,6 +1,6 @@
-# 👨‍💻 Aplicación de consola
+# 👨‍💻 Aplicación de consola - Node.js
 
-Node.js - Usando el objeto process se obtienen los argumentos pasados al ejecutar el archivo index.js de la aplicación y con estos argumentos se decide que acción debe hacer.
+Usando el objeto ```process``` se obtienen los argumentos pasados al ejecutar el archivo index.js de la aplicación y con estos argumentos se decide que acción debe hacer.
 
 ## 🚀 Modo de uso:
 
