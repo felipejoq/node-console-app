@@ -5,6 +5,6 @@ const args = process.argv.slice(2);
 const [operation, ...inputs] = args;
 
 const recordService = new RecordService();
-const recordController = new RecordController(recordService)
+const recordController = new RecordController(recordService);
 
 recordController.showResult({ operation, inputs });
