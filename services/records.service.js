@@ -17,7 +17,7 @@ export class RecordService {
 
   createRecord(inputs = []) {
     if (inputs.length < 5) {
-      return `ℹ️\tAll values required: ${Object.getOwnPropertyNames(new Record).slice(1).join(', ')}.`;
+      return `ℹ️\tAll values are required: ${Object.getOwnPropertyNames(new Record).slice(1).join(', ')}.`;
     }
 
     this.records = [
@@ -27,7 +27,7 @@ export class RecordService {
 
     this.saveRecord(this.records);
 
-    return '✅\tNew Record created.';
+    return '✅\tNew Record was created.';
   }
 
   saveRecord(records) {
